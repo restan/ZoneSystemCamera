@@ -169,4 +169,9 @@ public class ImageOperations {
 		}
 		return submask;
 	}
+	
+	public static Mat getEmptyImage(Mat example) {
+		Mat empty = Mat.zeros(example.rows(), example.cols(), example.type());
+		return empty;
+	}
 }
