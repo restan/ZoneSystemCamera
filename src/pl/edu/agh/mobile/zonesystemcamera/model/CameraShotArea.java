@@ -2,9 +2,11 @@ package pl.edu.agh.mobile.zonesystemcamera.model;
 
 import java.util.List;
 
+import org.opencv.core.Mat;
+
 public class CameraShotArea {
 	private int number;
-	private boolean[][] mask;
+	private Mat mask;
 	private List<CameraShotSettings> destinationZoneSettings;
 	
 	public int getNumber() {
@@ -14,18 +16,17 @@ public class CameraShotArea {
 		this.number = number;
 	}
 	
-	public boolean[][] getMask() {
+	public Mat getMask() {
 		return mask;
 	}
-	public void setMask(boolean[][] mask) {
+	public void setMask(Mat mask) {
 		this.mask = mask;
 	}
 	
 	public List<CameraShotSettings> getDestinationZoneSettings() {
 		return destinationZoneSettings;
 	}
-	public void setDestinationZoneSettings(
-			List<CameraShotSettings> destinationZoneSettings) {
+	public void setDestinationZoneSettings(List<CameraShotSettings> destinationZoneSettings) {
 		this.destinationZoneSettings = destinationZoneSettings;
 	}
 }

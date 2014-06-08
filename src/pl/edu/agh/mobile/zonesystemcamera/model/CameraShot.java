@@ -1,16 +1,16 @@
 package pl.edu.agh.mobile.zonesystemcamera.model;
 
-import android.graphics.Bitmap;
+import org.opencv.core.Mat;
 
 public class CameraShot {
-	private Bitmap bitmap;
+	private Mat photo;
 	private CameraShotSettings settings;
 
-	public Bitmap getBitmap() {
-		return bitmap;
+	public Mat getPhoto() {
+		return photo;
 	}
-	public void setBitmap(Bitmap bitmap) {
-		this.bitmap = bitmap;
+	public void setPhoto(Mat photo) {
+		this.photo = photo;
 	}
 
 	public CameraShotSettings getSettings() {
