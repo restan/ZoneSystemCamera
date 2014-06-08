@@ -1,8 +1,8 @@
 package pl.edu.agh.mobile.zonesystemcamera.service;
 
 import pl.edu.agh.mobile.zonesystemcamera.model.CameraShot;
-import pl.edu.agh.mobile.zonesystemcamera.model.ZoneSettings;
+import pl.edu.agh.mobile.zonesystemcamera.model.SceneSettings;
 
 public interface ZoneSystemService {
-	public ZoneSettings prepareZoneSettings(CameraShot lightShot, CameraShot normalShot, CameraShot darkShot);
+	public SceneSettings prepareSceneSettings(CameraShot lightShot, CameraShot normalShot, CameraShot darkShot);
 }

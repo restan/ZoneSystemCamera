@@ -1,24 +1,21 @@
 package pl.edu.agh.mobile.zonesystemcamera.model;
 
-import java.util.List;
-
-import org.opencv.core.Mat;
-
 public class ZoneSettings {
-	private Mat preview;
-	private List<CameraShotArea> areas;
-
-	public Mat getPreview() {
-		return preview;
+	private int number;
+	private CameraShotSettings captureSettings;
+	
+	public int getNumber() {
+		return number;
 	}
-	public void setPreview(Mat preview) {
-		this.preview = preview;
+	public void setNumber(int number) {
+		this.number = number;
 	}
 	
-	public List<CameraShotArea> getAreas() {
-		return areas;
+	public CameraShotSettings getCaptureSettings() {
+		return captureSettings;
 	}
-	public void setAreas(List<CameraShotArea> areas) {
-		this.areas = areas;
+	public void setCaptureSettings(CameraShotSettings captureSettings) {
+		this.captureSettings = captureSettings;
 	}
+	
 }

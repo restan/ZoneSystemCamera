@@ -4,10 +4,10 @@ import java.util.List;
 
 import org.opencv.core.Mat;
 
-public class CameraShotArea {
+public class SceneArea {
 	private int number;
 	private Mat mask;
-	private List<CameraShotSettings> destinationZoneSettings;
+	private List<ZoneSettings> zonesSettings;
 	
 	public int getNumber() {
 		return number;
@@ -23,10 +23,10 @@ public class CameraShotArea {
 		this.mask = mask;
 	}
 	
-	public List<CameraShotSettings> getDestinationZoneSettings() {
-		return destinationZoneSettings;
+	public List<ZoneSettings> getZonesSettings() {
+		return zonesSettings;
 	}
-	public void setDestinationZoneSettings(List<CameraShotSettings> destinationZoneSettings) {
-		this.destinationZoneSettings = destinationZoneSettings;
+	public void setZonesSettings(List<ZoneSettings> zonesSettings) {
+		this.zonesSettings = zonesSettings;
 	}
 }
